@@ -13,13 +13,12 @@
   white-space: nowrap;
   float: left;
   margin-top: -10px;
-  background: rgba(255, 255, 255, 0.5);
 }
 
 .nav-menu a {
   display: block;
   position: relative;
-  color: #2f4d5a;
+  color: #fff;
   padding: 20px 15px;
   transition: 0.3s;
   font-size: 13px;
