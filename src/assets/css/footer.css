@@ -6,7 +6,7 @@
   background: #263f49;
   padding: 0 0 30px 0;
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #footer .footer-top {
@@ -85,7 +85,7 @@
 }
 
 #footer .footer-top .footer-links ul li {
-  padding: 10px 0;
+  padding: 5px 0;
   display: flex;
   align-items: center;
 }
