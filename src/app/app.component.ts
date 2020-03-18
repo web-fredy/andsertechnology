@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-declare function init_plugin();
+declare function init_plugin(): any;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,4 +13,5 @@ export class AppComponent implements OnInit{
   ngOnInit() {
     init_plugin();
   }
+  
 }
