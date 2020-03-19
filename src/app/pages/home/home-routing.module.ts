@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CableadoEstructuradoComponent } from './cableado-estructurado.component';
+import { HomeComponent } from './home.component';
 
 
 const routes: Routes = [
-  {path: '', component: CableadoEstructuradoComponent}
+  {path: '', component: HomeComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class CableadoEstructuradoRoutingModule { }
+export class HomeRoutingModule { }

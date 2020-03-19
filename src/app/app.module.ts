@@ -3,20 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MenuComponent } from './shared/menu/menu.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { HomeComponent } from './pages/home.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
-    FooterComponent,
-    HomeComponent
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

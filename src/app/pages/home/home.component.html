@@ -1,3 +1,5 @@
+<app-menu></app-menu>
+
 <section id="hero">
   <div class="hero-container">
     <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -125,7 +127,7 @@
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up">
             <div class="icon"><i class="bx bx-user"></i></div>
-            <h4 class="title"><a href="">Soporte de usuario de oficinas</a></h4>
+            <h4 class="title"><a [routerLink]="['/servicios']" routerLinkActive="router-link-active" >Soporte de usuario de oficinas</a></h4>
             <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, autem.</p>
           </div>
         </div>
@@ -587,3 +589,7 @@
   </section><!-- End Contact Section -->
 
 </main><!-- End #main -->
+
+<app-footer></app-footer>
+
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>

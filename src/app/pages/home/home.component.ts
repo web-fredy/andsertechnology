@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 declare function plugin_menu(): any;
 
@@ -7,11 +7,14 @@ declare function plugin_menu(): any;
   templateUrl: './home.component.html',
   styles: []
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnDestroy {
 
   constructor() { }
 
   ngOnInit(): void {
+    plugin_menu();
+  }
+  ngOnDestroy(): void {
     plugin_menu();
   }
 

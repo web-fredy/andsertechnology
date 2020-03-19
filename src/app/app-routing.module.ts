@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './pages/home.component';
-
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
+import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
   {
@@ -9,12 +9,17 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'cableado',
-    loadChildren: () => import('./pages/cableado-estructurado/cableado-estructurado.module').then(m => m.CableadoEstructuradoModule)
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
   },
   {
     path: '',
-    component: HomeComponent
+    loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent
   }
 ];
 
