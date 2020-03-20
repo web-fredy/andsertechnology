@@ -10,7 +10,7 @@ import { HomeModule } from '../home/home.module';
   declarations: [ServiciosComponent],
   imports: [
     CommonModule,
-    HomeModule,
+    // HomeModule,
     ServiciosRoutingModule
   ]
 })

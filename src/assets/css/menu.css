@@ -28,7 +28,8 @@
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  /* background: rgba(255, 255, 255, 0.2); */
+  background: rgba(255, 255, 255, 0.2);
+  color: #67b0d1;
   text-decoration: none;
 }
 

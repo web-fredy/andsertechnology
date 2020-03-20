@@ -1,4 +1,5 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 declare function plugin_menu(): any;
 
@@ -7,15 +8,18 @@ declare function plugin_menu(): any;
   templateUrl: './home.component.html',
   styles: []
 })
-export class HomeComponent implements OnInit, OnDestroy {
+export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     plugin_menu();
   }
-  ngOnDestroy(): void {
-    plugin_menu();
+
+  public tienda(): void{
+    this.router.navigate(['/store']);
   }
 
 }

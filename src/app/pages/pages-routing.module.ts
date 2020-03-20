@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ServiciosComponent } from './servicios/servicios.component';
+import { StoreComponent } from './store/store.component';
 
 
 const routes: Routes = [
   {
-    path: '',
-    component: ServiciosComponent,
+    path: 'store',
+    component: StoreComponent,
     children: [
       {
-        path: 'servicios',
-        loadChildren: () => import('./servicios/servicios.module').then(m => m.ServiciosModule)
+        path: '',
+        loadChildren: () => import('./store/store.module').then(m => m.StoreModule)
       }
     ]
   }

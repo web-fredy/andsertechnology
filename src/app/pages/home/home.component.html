@@ -19,7 +19,6 @@
         <li><a href="#services">Servicios</a></li>
         <li><a href="#portfolio">Portafolio</a></li>
         <li><a href="#team">Equipo</a></li>
-        <li><a routerLink="/servicios" class="pointer">Productos y servicios</a></li>
         <li><a href="#contact">Contáctenos</a></li>
       </ul>
     </nav><!-- .nav-menu -->
@@ -89,6 +88,9 @@
       </a>
 
     </div>
+    <div data-aos="zoom-in-up" style="color: #fff;position: absolute;z-index: 1; right: 25px;bottom: 100px;font-weight: 800;font-family: 'Raleway', sans-serif;font-size: 35px;">
+      <a href="javscript:void()" (click)="tienda()">Articulos & Servicios</a>
+    </div>
 
   </div>
 </section><!-- End Hero -->
@@ -155,7 +157,7 @@
           <div class="icon-box" data-aos="fade-up">
             <div class="icon"><i class="bx bx-user"></i></div>
             <h4 class="title">
-              <a [routerLink]="['/servicios']">Soporte de usuario de oficinas</a></h4>
+              <a routerLink="servicios">Soporte de usuario de oficinas</a></h4>
             <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, autem.</p>
           </div>
         </div>

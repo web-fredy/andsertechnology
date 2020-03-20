@@ -54,6 +54,7 @@ function plugin_menu(){
         $('.mobile-nav-overly').toggle();
       });
       $(document).on('click', '.mobile-nav .drop-down > a', function(e) {
+
         e.preventDefault();
         $(this).next().slideToggle(300);
         $(this).parent().toggleClass('active');
