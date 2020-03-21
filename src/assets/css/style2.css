@@ -345,7 +345,7 @@ figure figcaption {
 }
 
 .sticky-wrapper .site-navbar {
-  transition: .3s all ease;
+  transition: .5s all ease;
 }
 
 .sticky-wrapper .site-navbar .site-menu-toggle {
@@ -381,6 +381,7 @@ figure figcaption {
 
 .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
   color: #000000 !important;
+  padding: 15px 20px;
 }
 
 .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active {
