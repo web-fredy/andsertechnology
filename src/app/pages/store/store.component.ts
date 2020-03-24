@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 declare function plugin_store(): any;
 
@@ -7,11 +7,15 @@ declare function plugin_store(): any;
   templateUrl: './store.component.html',
   styles: []
 })
-export class StoreComponent implements OnInit {
+export class StoreComponent implements OnInit, OnDestroy {
 
   constructor() { }
 
   ngOnInit(): void {
+    plugin_store();
+  }
+
+  ngOnDestroy(): void{
     plugin_store();
   }
 

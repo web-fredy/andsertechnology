@@ -372,7 +372,6 @@ figure figcaption {
 .sticky-wrapper.is-sticky .site-navbar {
   background: #fff;
   border-bottom: 1px solid transparent;
-  box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
 }
 
 .sticky-wrapper.is-sticky .site-navbar .site-logo a {
@@ -769,6 +768,8 @@ figure figcaption {
   position: absolute;
   top: 0;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 4px 0 20px -5px #000;
 }
 
 .site-navbar .site-logo {
